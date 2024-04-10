@@ -5,37 +5,37 @@ export const navLinks = [
       icon: "/assets/icons/home.svg",
     },
     {
-      label: "Image Restore",
+      label: "提高圖片解析度",
       route: "/transformations/add/restore",
       icon: "/assets/icons/image.svg",
     },
     {
-      label: "Generative Fill",
+      label: "圖片長寬修改",
       route: "/transformations/add/fill",
       icon: "/assets/icons/stars.svg",
     },
     {
-      label: "Object Remove",
+      label: "刪除物件",
       route: "/transformations/add/remove",
       icon: "/assets/icons/scan.svg",
     },
     {
-      label: "Object Recolor",
+      label: "更換色彩",
       route: "/transformations/add/recolor",
       icon: "/assets/icons/filter.svg",
     },
     {
-      label: "Background Remove",
+      label: "去背",
       route: "/transformations/add/removeBackground",
       icon: "/assets/icons/camera.svg",
     },
     {
-      label: "Profile",
+      label: "會員資訊",
       route: "/profile",
       icon: "/assets/icons/profile.svg",
     },
     {
-      label: "Buy Credits",
+      label: "加入VIP",
       route: "/credits",
       icon: "/assets/icons/bag.svg",
     },
@@ -122,29 +122,29 @@ export const navLinks = [
   export const transformationTypes = {
     restore: {
       type: "restore",
-      title: "Restore Image",
-      subTitle: "Refine images by removing noise and imperfections",
+      title: "提高圖片解析度",
+      subTitle: "透過消除雜訊和缺陷來優化影像",
       config: { restore: true },
       icon: "image.svg",
     },
     removeBackground: {
       type: "removeBackground",
-      title: "Background Remove",
-      subTitle: "Removes the background of the image using AI",
+      title: "去背",
+      subTitle: "使用AI技術將背景圖片去除",
       config: { removeBackground: true },
       icon: "camera.svg",
     },
     fill: {
       type: "fill",
-      title: "Generative Fill",
-      subTitle: "Enhance an image's dimensions using AI outpainting",
+      title: "變更圖片尺寸",
+      subTitle: "使用AI技術自動轉換圖片長寬比例",
       config: { fillBackground: true },
       icon: "stars.svg",
     },
     remove: {
       type: "remove",
-      title: "Object Remove",
-      subTitle: "Identify and eliminate objects from images",
+      title: "刪除物件",
+      subTitle: "辨識並刪除影像中的物件",
       config: {
         remove: { prompt: "", removeShadow: true, multiple: true },
       },
@@ -152,8 +152,8 @@ export const navLinks = [
     },
     recolor: {
       type: "recolor",
-      title: "Object Recolor",
-      subTitle: "Identify and recolor objects from the image",
+      title: "更換色彩",
+      subTitle: "辨識並更換圖片中的某個色彩",
       config: {
         recolor: { prompt: "", to: "", multiple: true },
       },
